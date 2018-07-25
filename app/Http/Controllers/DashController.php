@@ -9,7 +9,7 @@ class DashController extends Controller
 {
     //
     public function dashboard(Request $request,$s_id){
-        $result=DashModel::where('soc_id', $s_id)->get();
+        $result=DashModel::where('soc_id', $s_id)->paginate(10);
         // $m_maint_no=$result['m_maint_no'];
         // $m_name=$result['m_name'];
         // $m_address=$result['m_address'];
