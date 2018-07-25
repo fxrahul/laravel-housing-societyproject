@@ -16,10 +16,10 @@
     <p>Address: {{$result->m_address}}</p>
     <p>PAN: {{$result->m_pan_card}}</p>
     <p>Mobile: {{$result->m_cel_no}}</p>
-    <p>Parking Amount: {{$result->m_parking_charge}}</p>
-    <p>Gas Amount: {{$result->m_gas_charge}}</p>
-    <p>Water Amount{{$result->m_water_charge}}</p>
-    <p>Light Amount{{$result->m_light_charge}}</p>
+    <p>Parking Amount: {{$result->m_parking_charge}}&nbsp;<a href="#" class="btn btn-dark">Pay</a></p>
+    <p>Gas Amount: {{$result->m_gas_charge}}&nbsp;<a href="#" class="btn btn-dark">Pay</a></p>
+    <p>Water Amount{{$result->m_water_charge}}&nbsp;<a href="#" class="btn btn-dark">Pay</a></p>
+    <p>Light Amount{{$result->m_light_charge}}&nbsp;<a href="#" class="btn btn-dark">Pay</a></p>
     <a href="{{url('lgout')}}" class="btn btn-dark">Logout</a>
   </center>
     @include('scripts')
